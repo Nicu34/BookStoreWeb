@@ -1,0 +1,4 @@
+rootProject.name = 'bookstorewebapp'
+include 'bookstorewebapp-core'
+include 'bookstorewebapp-web'
+

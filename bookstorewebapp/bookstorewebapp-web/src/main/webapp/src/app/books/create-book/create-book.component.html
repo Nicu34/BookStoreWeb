@@ -1,0 +1,12 @@
+<h2>Create book</h2>
+<div>
+  <label>Title: </label>
+  <input placeholder="title" #title_input>
+
+  <label>Author: </label>
+  <input placeholder="author" #author_input>
+
+  <label>Price: </label>
+  <input placeholder="price" #price_input>
+  <button (click)="create(title_input.value, author_input.value, price_input.value)">Create</button>
+</div>

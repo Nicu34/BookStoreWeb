@@ -1,0 +1,18 @@
+<div *ngIf="book">
+    <h2>Book {{book.title}} by {{book.author}}</h2>
+    <div>
+        <label>Title: </label> {{book.title}}
+        <input [(ngModel)]="book.title" placeholder="title">
+    </div>
+    <div>
+        <label>Author: </label> {{book.author}}
+        <input [(ngModel)]="book.author" placeholder="author">
+    </div>
+    <div>
+        <label>Price: </label> {{book.price}}
+        <input [(ngModel)]="book.price" placeholder="price">
+    </div>
+    <button (click)="delete()">Delete</button>
+    <button (click)="update()">Update</button>
+    <button (click)="goBack()">Back</button>
+</div>

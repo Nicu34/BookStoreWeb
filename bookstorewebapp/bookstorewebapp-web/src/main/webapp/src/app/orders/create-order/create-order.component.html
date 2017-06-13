@@ -1,0 +1,18 @@
+<h3>Add Order</h3>
+<div>
+  <label>Client: </label>
+  <select [(ngModel)] = "selectedClient">
+    <option *ngFor="let client of clients" [ngValue]="client">
+      {{client.name}}
+    </option>
+  </select>
+  <label>Book: </label>
+  <select [(ngModel)] = "selectedBook">
+    <option *ngFor="let book of books" [ngValue]="book">
+      {{book.title}}
+    </option>
+  </select>
+</div>
+<div>
+  <button (click)="save(selectedClient, selectedBook)">Create</button>
+</div>
